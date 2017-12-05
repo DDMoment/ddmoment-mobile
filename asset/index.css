@@ -2,10 +2,34 @@
     height: 90vh;
     margin-top:5px;
 }
-.container{
+.container-wrap{
     height: inherit;
     overflow: auto;
 }
 .feed{
 
 }
+.pic_grid {
+    display: table;
+    border-spacing: 2px;
+    width: 100%;
+}
+.pic_row {
+    display: table-row;
+    overflow: hidden;
+}
+.pic_cell {
+    height: 33%;
+    width: 33%;
+    display: table-cell;
+}
+.pic_cell img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+/*
+res img
+maxwidth 100%
+height auto
+ */
