@@ -16,7 +16,7 @@
         <li><a href="#" id="login">注册</a></li>
     </ul>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">主页</a>
+        <a href="#" class="brand-logo center" onclick="location.reload()">主页</a>
         <a href="#"  data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         <img src="./asset/img/user.png" alt="" class="circle brand-logo right responsive-image" style="width: 50px;height: 45px; margin-right: 5px;padding: 5px;margin-top: 5px;"> <!-- notice the "circle" class -->
     </div>
