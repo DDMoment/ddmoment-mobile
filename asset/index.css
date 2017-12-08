@@ -30,6 +30,12 @@
     width: 100%;
     cursor: pointer;
 }
+.feed_card{
+    padding: 4vh 4vh 0;
+}
+.feed_user_icon{
+    display: inherit
+}
 /*
 res img
 maxwidth 100%

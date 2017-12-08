@@ -11,3 +11,9 @@ body{
     width: 100%;
     margin: 0 auto;
 }
+#loader{
+    width: 128px;height: 128px;margin: 0 auto;display: block;top: 30vh;
+}
+#loader_text{
+    font-size: x-large;display: table;margin: 0 auto
+}

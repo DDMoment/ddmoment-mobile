@@ -1,8 +1,11 @@
 <?php
-include_once('./include/header.php');
-include('./include/top_nav.php');
+include "./include/header.php";
 ?>
 <link rel="stylesheet" href="./asset/index.css">
+<body>
+<div class="page-tab">
+    div.
+</div>
 <div class="wrapper">
     <div class="container-wrap">
         <div id="feed">
@@ -10,18 +13,18 @@ include('./include/top_nav.php');
         </div>
     </div>
 </div>
+</body>
 <?php
-include_once('./include/footer_nav.php');
-include_once('./include/footer.php');
+include_once "./include/footer.php";
+include_once "./include/image_viewer.php";
 ?>
 <script>
     var root = 'https://jsonplaceholder.typicode.com';
     $.ajax({
-        url: root + '/posts',
+        url: root + '/posts/<?php echo $_GET['id']+1 ?>',
         method: 'GET'
     }).then(function (data) {
-        $("#progress").hide()
-        for (var i = 0; i < data.length; i++) {
+        $("#progress").hide();
             var template = `
 <div class="card grey lighten-5 row z-depth-1 feed_card" style="">
     <div class="card-title">
@@ -31,7 +34,7 @@ include_once('./include/footer.php');
             </div>
             <div class="col s10">
             <span class="black-text">
-               ${data[i].title}
+               ${data.title}
             </span>
             </div>
         </div>
@@ -39,9 +42,8 @@ include_once('./include/footer.php');
     </div>
     <div class="card-content">
         <p>
-            ${data[i].body}
+            ${data.body}
         </p>
-        <a href="post.php?id=${i}">Read More</a>
 
        <ul class="docs-pictures my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <li itemscope itemprop="associatedMedia"><img src="http://via.placeholder.com/512x512" itemprop="thumbnail" alt="Cuo Na Lake"></li>
@@ -64,11 +66,7 @@ include_once('./include/footer.php');
 </div>
         `
             $("#feed").append(template);
-        }
         initPhotoSwipeFromDOM('.my-gallery');
     });
 </script>
-    <script src="/asset/js/image_viwer.js"></script>
-<?php
-include_once('./include/image_viewer.php');
-?>
+<script src="/asset/js/image_viwer.js"></script>
