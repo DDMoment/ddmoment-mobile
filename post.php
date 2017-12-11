@@ -4,7 +4,6 @@ include "./include/header.php";
 <link rel="stylesheet" href="./asset/index.css">
 <body>
 <div class="page-tab">
-    div.
 </div>
 <div class="wrapper">
     <div class="container-wrap">
