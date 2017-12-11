@@ -45,12 +45,12 @@ include_once('./include/footer.php');
 
        <ul class="docs-pictures my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <li itemscope itemprop="associatedMedia"><img src="http://via.placeholder.com/512x512" itemprop="thumbnail" alt="Cuo Na Lake"></li>
-            <!--<li itemscope itemprop="associatedMedia"><img src="http://via.placeholder.com/512x512" itemprop="thumbnail" alt="Tibetan Plateau"></li>-->
-            <!--<li><img src="http://via.placeholder.com/512x512" alt="Jokhang Temple"></li>-->
-            <!--<li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 1"></li>-->
-            <!--<li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 2"></li>-->
-            <!--<li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 3"></li>-->
-            <!--<li><img src="http://via.placeholder.com/512x512" alt="Lhasa River"></li>-->
+            <li itemscope itemprop="associatedMedia"><img src="http://via.placeholder.com/512x512" itemprop="thumbnail" alt="Tibetan Plateau"></li>
+            <li><img src="http://via.placeholder.com/512x512" alt="Jokhang Temple"></li>
+            <li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 1"></li>
+            <li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 2"></li>
+            <li><img src="http://via.placeholder.com/512x512" alt="Potala Palace 3"></li>
+            <li><img src="http://via.placeholder.com/512x512" alt="Lhasa River"></li>
             <!--<li><img src="http://via.placeholder.com/512x512" alt="Namtso 1"></li>-->
             <!--<li><img src="http://via.placeholder.com/512x512" alt="Namtso 2"></li>-->
           </ul>
